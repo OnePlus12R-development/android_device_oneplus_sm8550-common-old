@@ -32,27 +32,42 @@ void OverrideProperty(const char* name, const char* value) {
  * than once should be set in a typical init script (e.g. init.oplus.hw.rc)
  * after the original property has been set.
  */
-void vendor_load_properties() {
+void vendor_load_properties() { // Salami
     auto hw_region_id = std::stoi(GetProperty("ro.boot.hw_region_id", "0"));
     auto prjname = std::stoi(GetProperty("ro.boot.prjname", "0"));
-
-    switch (hw_region_id) {
-        case 21: // CN_IN
-            if (prjname == 22811) { // CN
-                OverrideProperty("ro.product.device", "OP591BL1");
-                OverrideProperty("ro.product.vendor.device", "OP591BL1");
-                OverrideProperty("ro.product.product.model", "PHB110");
-            } else if (prjname == 22861) { // IN
-                OverrideProperty("ro.product.product.model", "CPH2447");
-            }
-            break;
-        case 22: // EU
-            OverrideProperty("ro.product.product.model", "CPH2449");
-            break;
-        case 23: // NA
-            OverrideProperty("ro.product.product.model", "CPH2451");
-            break;
-        default:
-            LOG(ERROR) << "Unexpected region ID: " << hw_region_id;
+    if (prjname == 22811 || prjname == 22861) { 
+        switch (hw_region_id) {
+            case 21: // CN_IN
+                if (prjname == 22811) { // CN salami
+                    OverrideProperty("ro.product.device", "OP591BL1");
+                    OverrideProperty("ro.product.vendor.device", "OP591BL1");
+                    OverrideProperty("ro.product.product.model", "PHB110");
+                } else if (prjname == 23801) { // CN aston
+                    OverrideProperty("ro.product.device", "OP5D35L1");
+                    OverrideProperty("ro.product.vendor.device", "OP5D35L1");
+                    OverrideProperty("ro.product.product.model", "PJE110");
+                } else if (prjname == 22861) { // IN salami
+                    OverrideProperty("ro.product.product.model", "CPH2447");
+                } else if (prjname == 23861) { // IN aston
+                    OverrideProperty("ro.product.product.model", "CPH2585");
+                }
+                break;
+            case 22: // EU
+                if (prjname == 22811) { // EU salami
+                    OverrideProperty("ro.product.product.model", "CPH2449");
+                } else if (prjname == 23861) { // EU aston
+                    OverrideProperty("ro.product.product.model", "CPH2611");
+                }
+                break;
+            case 23: // NA
+                if (prjname == 22811) { // NA salami
+                    OverrideProperty("ro.product.product.model", "CPH2445");
+                } else if (prjname == 23861) { // NA aston
+                    OverrideProperty("ro.product.product.model", "CPH2611");
+                }
+                break;
+            default:
+                LOG(ERROR) << "Unexpected region ID: " << hw_region_id;
+        }
     }
 }
