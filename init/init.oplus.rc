@@ -15,7 +15,7 @@ on boot
     chown system system /sys/kernel/oplus_display/dynamic_osc_clock
     chown system system /sys/kernel/oplus_display/notify_fppress
     chown system system /sys/kernel/oplus_display/panel_serial_number
-
+    chown system system /sys/kernel/oplus_display/nit_brightness
     chmod 0000 /sys/kernel/oplus_display/hbm
 
     # Sensors
