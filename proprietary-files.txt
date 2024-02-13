@@ -2104,11 +2104,6 @@ vendor/lib64/libQnnHtpV73Stub.so
 vendor/lib64/libQnnSystem.so
 vendor/lib64/libqnnengine.so
 
-# NFC
-odm/etc/nfc/libnfc-mtp-SN100.conf_22861:vendor/etc/libnfc-nxp.conf
-odm/etc/nfc/libnfc-nci.conf_22861:vendor/etc/libnfc-nci.conf
-odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
-
 # OSENSE
 odm/lib64/libosenseaidlhalclient.so
 odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk.so
