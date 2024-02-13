@@ -103,3 +103,9 @@ sh_binary {
     src: "init.qcom.sh",
     vendor: true,
 }
+
+sh_binary {
+    name: "init.baseband.sh",
+    src: "init.baseband.sh",
+    device_specific: true,
+}
