@@ -110,11 +110,47 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.stats-V1-ndk.vendor \
     android.hardware.camera.common@1.0.vendor \
+    android.hardware.camera.common-V1-ndk.vendor \
     android.hardware.camera.device-V1-ndk.vendor \
+    android.hardware.camera.device-V2-ndk.vendor \
+    android.hardware.camera.device@1.0.vendor \
+    android.hardware.camera.device@3.2.vendor \
+    android.hardware.camera.device@3.3.vendor \
+    android.hardware.camera.device@3.4.vendor \
+    android.hardware.camera.device@3.5.vendor \
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.device@3.7.vendor \
     android.hardware.camera.metadata-V1-ndk.vendor \
+    android.hardware.camera.metadata-V2-ndk.vendor \
+    android.hardware.camera.metadata@3.2.vendor \
+    android.hardware.camera.metadata@3.3.vendor \
+    android.hardware.camera.metadata@3.4.vendor \
+    android.hardware.camera.metadata@3.5.vendor \
+    android.hardware.camera.metadata@3.6.vendor \
     android.hardware.camera.provider-V1-ndk.vendor \
+    android.hardware.camera.provider-V2-ndk.vendor \
+    android.hardware.camera.provider@2.4.vendor \
+    android.hardware.camera.provider@2.5.vendor \
+    android.hardware.camera.provider@2.6.vendor \
+    android.hardware.camera.provider@2.7.vendor \
+    vendor.qti.hardware.camera.aon@1.0.vendor \
+    vendor.qti.hardware.camera.aon@1.1.vendor \
+    vendor.qti.hardware.camera.aon@1.2.vendor \
     vendor.qti.hardware.camera.aon@1.3.vendor \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
+    #vendor.qti.hardware.camera.aon-service-impl.vendor \
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    #vendor.qti.hardware.camera.postproc@1.0-service-impl.vendor \
+    libgrallocusage.vendor \
+    android.frameworks.cameraservice.common-V1-ndk.vendor \
+    android.frameworks.cameraservice.common-V2-ndk.vendor \
+    android.frameworks.cameraservice.common@2.0.vendor \
+    #android.frameworks.cameraservice.device-v1-ndk.vendor \
+    android.frameworks.cameraservice.device@2.0.vendor \
+    android.frameworks.cameraservice.device@2.1.vendor \
+    android.frameworks.cameraservice.service-V1-ndk.vendor \
+    android.frameworks.cameraservice.service@2.0.vendor \
+    android.frameworks.cameraservice.service@2.1.vendor \
+    android.frameworks.cameraservice.service@2.2.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
@@ -260,6 +296,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.oplus.rc \
     ueventd.qcom.rc
+    
+# IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir-V1-ndk.vendor
 
 # Keymaster
 PRODUCT_PACKAGES += \
