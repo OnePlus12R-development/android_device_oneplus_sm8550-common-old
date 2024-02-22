@@ -2,9 +2,25 @@
 ## are from OnePlus 11 (CPH2449_14.0.0.401(EX01)).
 
 # ACDBs
+odm/etc/acdbdata/acdb_cal.acdb
+odm/etc/acdbdata/Audio_Parameter_Version.txt
+odm/etc/acdbdata/FTM/acdb_cal.acdb
+odm/etc/acdbdata/FTM/workspaceFileXml.qwsp
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
+vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
+vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
+vendor/etc/acdbdata/kalama_cdp/CDP_acdb_cal.acdb
+vendor/etc/acdbdata/kalama_cdp/CDP_workspaceFileXml.qwsp
+vendor/etc/acdbdata/kalama_grd/GRD_acdb_cal.acdb
+vendor/etc/acdbdata/kalama_grd/GRD_workspaceFileXml.qwsp
+vendor/etc/acdbdata/kalama_mtp/MTP_acdb_cal.acdb
+vendor/etc/acdbdata/kalama_mtp/MTP_workspaceFileXml.qwsp
+vendor/etc/acdbdata/kalama_qrd/QRD_acdb_cal.acdb
+vendor/etc/acdbdata/kalama_qrd/QRD_workspaceFileXml.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd
+vendor/lib64/libar-acdb.so
+vendor/lib/libar-acdb.so
 
 # ADSP
 vendor/bin/adsprpcd
@@ -1268,8 +1284,8 @@ vendor/lib64/com.qti.feature2.mux.so
 vendor/lib64/com.qti.feature2.qcfa.so
 vendor/lib64/com.qti.feature2.rawhdr.so
 vendor/lib64/com.qti.feature2.realtimeserializer.so
-vendor/lib64/com.qti.feature2.rt.so
 vendor/lib64/com.qti.feature2.rtmcx.so
+vendor/lib64/com.qti.feature2.rt.so
 vendor/lib64/com.qti.feature2.serializer.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/com.qti.qseeaon.so
@@ -1536,7 +1552,38 @@ odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.hal@3.3.so
 
+system_ext/lib64/vendor.oplus.hardware.engcamera@1.0.so
+system_ext/lib64/vendor.oplus.hardware.cameraMDM@1.0.so
+system_ext/lib64/libSloganJni.oplus.so
+system_ext/lib64/libOplusSloganClient.so
+system_ext/lib64/libozoaudiodecoder.so
+system_ext/lib64/vendor.oplus.hardware.camera.slogan-V1-ndk_platform.so
+system_ext/lib64/oplusex/libcriticallogex.so
+system_ext/lib64/libHeifWinBufExchg-jni.so
+system_ext/lib64/libaudiopolicyextimpl.so
+system_ext/lib64/lib-imsvt.so
+system_ext/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0.so
+system_ext/lib64/liboplusavenhancements.so
+system_ext/lib64/libAPSClient-cmd-jni-extension.oplus.so
+system_ext/lib64/libOplusVirtualCamera.so
+system_ext/lib64/liboplusheifwriter.so
+system_ext/lib64/libgpustress_eng.so
+system_ext/lib64/libimscamera_jni.so
+system_ext/lib64/libcomposerextn.qti.so
+system_ext/lib64/libcsextimpl.so
+system_ext/lib64/vendor.oplus.hardware.camera.slogan@1.0.so
+system_ext/lib64/libsuperNight.oplus.so
+system_ext/lib64/libNativeWinBuffExchange.so
+system_ext/lib64/liboplusrecorder.so
+system_ext/lib64/liboplusozowrapper.so
+system_ext/lib64/libavenhancements.so
+system_ext/lib64/liboplusmediaplayerservice.so
+system_ext/etc/obrain/config/midas.conf
+
 ##########
+
+# COPIUM AT ITS WORST
+vendor_dlkm/lib/modules/camera.ko
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00

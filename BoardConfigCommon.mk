@@ -175,7 +175,7 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/mm-drivers/msm_ext_display \
 	qcom/opensource/mm-drivers/sync_fence \
 	qcom/opensource/audio-kernel \
-	qcom/opensource/camera-kernel \
+	#qcom/opensource/camera-kernel \
 	qcom/opensource/dataipa/drivers/platform/msm \
 	qcom/opensource/datarmnet/core \
 	qcom/opensource/datarmnet-ext/aps \
