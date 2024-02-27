@@ -107,6 +107,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 # Camera
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
+
 #android.frameworks.stats-V1-ndk.vendor \
     #android.hardware.camera.common@1.0.vendor \
     #android.hardware.camera.device-V1-ndk.vendor \
@@ -124,7 +126,20 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider-V2-ndk.vendor \
     android.frameworks.cameraservice.common-V1-ndk.vendor \
     android.frameworks.cameraservice.common-V2-ndk.vendor \
-    android.frameworks.cameraservice.service-V1-ndk.vendor
+    android.frameworks.cameraservice.service-V1-ndk.vendor \
+    android.hardware.common-V1-ndk_platform.vendor \
+    android.hardware.common-V2-ndk_platform.vendor \
+    android.hardware.common-V1-ndk.vendor \
+    android.hardware.common-V2-ndk.vendor \
+    android.hardware.common.fmq-V1-ndk_platform.vendor \
+    android.hardware.common.fmq-V2-ndk_platform.vendor \
+    android.hardware.common.fmq-V1-ndk.vendor \
+    android.hardware.common.fmq-V2-ndk.vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_soft_common.vendor
+    
 
 #PRODUCT_COPY_FILES += \
 #frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
@@ -145,7 +160,12 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.common-V1-ndk_platform.vendor \
+    android.hardware.common-V2-ndk_platform.vendor \
+    android.hardware.graphics.composer3-V1-ndk.vendor \
     android.hardware.graphics.allocator-V1-ndk.vendor \
+    android.hardware.graphics.common-V1-ndk.vendor \
+    android.hardware.graphics.common-V2-ndk.vendor \
     android.hardware.graphics.common-V3-ndk.vendor \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     init.qti.display_boot.rc \
@@ -524,6 +544,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+
+#VNDK
+BOARD_VNDK_VERSION := current
+PRODUCT_EXTRA_VNDK_VERSIONS := 30 31 32 33
 
 # WiFi
 PRODUCT_PACKAGES += \

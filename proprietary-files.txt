@@ -1580,6 +1580,46 @@ system_ext/lib64/libavenhancements.so
 system_ext/lib64/liboplusmediaplayerservice.so
 system_ext/etc/obrain/config/midas.conf
 
+product/lib64/libandroid_logger.dylib.so
+product/lib64/libandroid_log_sys.dylib.so
+product/lib64/libbinder_ndk_sys.dylib.so
+product/lib64/libbinder_rs.dylib.so
+product/lib64/libbitflags.dylib.so
+product/lib64/libcfg_if.dylib.so
+product/lib64/libdowncast_rs.dylib.so
+product/lib64/libenv_logger.dylib.so
+product/lib64/libitoa.dylib.so
+product/lib64/libjni_aidl_service.so
+product/lib64/libjni_eglfence.so
+product/lib64/libjni_filtershow_filters.so
+product/lib64/libjni_jpegstream.so
+product/lib64/libjni_jpegutil.so
+product/lib64/libjni_latinime.so
+product/lib64/libjni_tinyplanet.so
+product/lib64/liblazy_static.dylib.so
+product/lib64/liblibc.dylib.so
+product/lib64/liblogger.dylib.so
+product/lib64/liblog_rust.dylib.so
+product/lib64/libmemoffset.dylib.so
+product/lib64/libnix.dylib.so
+product/lib64/libonce_cell.dylib.so
+product/lib64/libpin_utils.dylib.so
+product/lib64/libryu.dylib.so
+product/lib64/libserde.dylib.so
+product/lib64/libserde_json.dylib.so
+product/lib64/libstatic_assertions.dylib.so
+product/lib64/libstd.dylib.so
+product/lib64/libvendor_qti_qvirt_V1.dylib.so
+product/lib64/vendor.qti.qvirt-V1-ndk.so
+
+odm/lib64/libcodec2_hidl@1.0.so
+odm/lib64/libcodec2_hidl_plugin.so
+odm/lib64/libcodec2_soft_ac4dec_sp.so
+odm/lib64/libcodec2_soft_common.so
+odm/lib64/libcodec2_soft_ddpdec_sp.so
+odm/lib64/libcodec2_store_dolby_sp.so
+
+system/system/lib64/libopus.so:product/lib64/libopus.so
 ##########
 
 # COPIUM AT ITS WORST
