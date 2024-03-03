@@ -132,7 +132,6 @@ PRODUCT_PACKAGES += \
     android.hardware.common-V1-ndk.vendor \
     android.hardware.common-V2-ndk.vendor \
     android.hardware.common.fmq-V1-ndk_platform.vendor \
-    android.hardware.common.fmq-V2-ndk_platform.vendor \
     android.hardware.common.fmq-V1-ndk.vendor \
     android.hardware.common.fmq-V2-ndk.vendor \
     libcodec2_hidl@1.0.vendor \
