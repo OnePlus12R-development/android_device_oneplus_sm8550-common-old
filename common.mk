@@ -107,31 +107,23 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 # Camera
-#android.frameworks.stats-V1-ndk.vendor \
-    #android.hardware.camera.common@1.0.vendor \
-    #android.hardware.camera.device-V1-ndk.vendor \
-    #android.hardware.camera.metadata-V1-ndk.vendor \
-    #android.hardware.camera.provider-V1-ndk.vendor \
-    #vendor.qti.hardware.camera.aon@1.3.vendor \
-    #vendor.qti.hardware.camera.postproc@1.0.vendor
 PRODUCT_PACKAGES += \
+    android.frameworks.stats-V1-ndk.vendor \
     android.hardware.camera.common-V1-ndk.vendor \
     android.hardware.camera.device-V1-ndk.vendor \
-    android.hardware.camera.device-V2-ndk.vendor \
     android.hardware.camera.metadata-V1-ndk.vendor \
-    android.hardware.camera.metadata-V2-ndk.vendor \
     android.hardware.camera.provider-V1-ndk.vendor \
-    android.hardware.camera.provider-V2-ndk.vendor \
     android.frameworks.cameraservice.common-V1-ndk.vendor \
-    android.frameworks.cameraservice.common-V2-ndk.vendor \
-    android.frameworks.cameraservice.service-V1-ndk.vendor
+    android.frameworks.cameraservice.service-V1-ndk.vendor \
+    vendor.qti.hardware.camera.aon@1.3.vendor \
+    vendor.qti.hardware.camera.postproc@1.0.vendor
 
-#PRODUCT_COPY_FILES += \
-#frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
-#frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-#frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
-#frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
-#frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
+PRODUCT_COPY_FILES += \
+frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
+frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
+frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
+frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
 # Context Hub
 PRODUCT_PACKAGES += \
