@@ -1580,6 +1580,9 @@ system_ext/lib64/libavenhancements.so
 system_ext/lib64/liboplusmediaplayerservice.so
 system_ext/etc/obrain/config/midas.conf
 
+odm/etc/camera/stereoParams.bin
+odm/lib64/libapsultrahdr.so
+
 ##########
 
 # COPIUM AT ITS WORST
@@ -1846,7 +1849,6 @@ vendor/lib64/libpwirisfeature.so
 vendor/lib64/libpwirisfeaturehal.so
 vendor/lib64/libpwirishal.so
 vendor/lib64/libpwirishalwrapper.so
-vendor/lib64/vendor.pixelworks.hardware.display-V1-ndk.so
 vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
 vendor/lib64/vendor.pixelworks.hardware.display@1.1.so
 vendor/lib64/vendor.pixelworks.hardware.display@1.2.so
