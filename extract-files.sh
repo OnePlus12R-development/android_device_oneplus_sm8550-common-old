@@ -83,6 +83,9 @@ function blob_fixup() {
             sed -i "/NXPLOG_\w\+_LOGLEVEL/ s/0x03/0x02/" "${2}"
             sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
             ;;
+        odm/lib64/libextensionlayer.so | vendor/lib64/hw/camera.qcom.so)
+            "${SIGSCAN}" -p "72 6F 2E 70 72 6F 64 75 63 74 2E 73 79 73 74 65 6D 2E 62 72 61 6E 64" -P "76 65 6E 64 6F 72 2E 6F 70 6C 75 73 2E 63 61 6D 65 72 61 2E 77 68 79" -f "${2}"
+            ;;
     esac
 }
 
